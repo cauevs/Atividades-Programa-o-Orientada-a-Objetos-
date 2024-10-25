@@ -61,7 +61,6 @@ public class ContaBancaria {
         Movimento moveDeposito = new Movimento(valor, TipoMovimento.DEBITO);
         incluirMovimento(moveDeposito);
     }
-
     public void transferir(ContaBancaria contaDestino, double valor) {
         sacar(valor);
         contaDestino.depositar(valor);
